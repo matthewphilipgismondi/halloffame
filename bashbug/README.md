@@ -1,0 +1,3 @@
+Maybe there really is a bashbug command that does what this says, but reading through the code made me laugh a little bit because of how helpful and innocent it sounds. And it has an email address that reminds me of someone I met that was just one more example of being cut off from someone as soon as I showed any sign of interest. Because... well, whatever. It also says DEFEDITOR which is what I feel like I am right now, but I don't edit things people say when I pass them on unless I say what I changed. Apparently I was mistaken for someone who must be notorious for that. And for someone who... [insert every possible thing].
+
+"Bitter, party of one? Your table is ready!" as Travis Hibbs would say. Bless his heart.
