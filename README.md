@@ -7,7 +7,7 @@ There is no sympathizing going on. I hate them and keep telling them to stay awa
 
 But that said, these are some of the files that I have come across on my computer that I am very certain are not what normally should be there. I have no idea who created them or how most of them really even work, so there may be some that are legit. But some, like the bashbug script, I know are a complete joke. It has to be. And combined with the chroot command that keeps showing up for the PS1 variable in my environment variables:
 
-PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+'PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ ''
 
 is that the executable that the bug is executing when a new bash shell opens and prints that initial command prompt? Because that is an awful lot just to say user@debian:~$ in green. And look! It's trying to offer me money now!! Just kidding. 
 
