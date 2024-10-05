@@ -1,3 +1,0 @@
-While trying to install Debian 12 Bookworm on my laptop, I noticed there were modules referenced that I could not find. With the installer open to the timezone selection frame, I did a "find / -name initramfscfg" and found this folder in /usr/lib/x86_64-linux-gnu that had a whole bunch of things I didn't know existed.
-
-Any README.md files were not part of it but are my own commentary added here on GitHub.
