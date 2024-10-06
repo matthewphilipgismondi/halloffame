@@ -1,0 +1,42 @@
+I am using a live boot of Debian 12 Bookworm LXDE while connected to WiFi at the OU Motel in Norman, OK. It is Saturday, October 5, 2024. My laptop keeps slowing down to a snail's pace, and I am reminded of that Firefox vulnerability and the need to update to a later version than 121 I believe. This is 115 which I assume is because this is the stable release of Debian. Regardless, I disabled service workers and all peer connections in the about:config file, and it says no service workers are running at the moment. Then I discovered the memory map feature, and that is what I saved along with this README file. What I thought was interesting is the "--enable-alsa" flag. And also the target is x86_64-linux-gnu and not just x86_64 or x86_64-linux. 
+
+This is interesting in light of that folder in /usr/lib/x86_64-linux-gnu where I also found all the Calamares files that were overriding the ability to choose a bootloader that did not include grub files. If this is pure Debian, then the configuration files should not have options that are overridden elsewhere. In other words, why would there be conflicting files at the top of the chain? That is why I wanted to install Debian and not a Debian derivative. And I wanted something that does not include anything that relies on grub because of Toby, my Golden Retriever, and his superpower of being able to sniff out grubs and eat them. Bless his little pointed head, as Bruce would say. And that is Bruce Taylor, husband of Misty Poe Taylor, both very good friends of mine that I love very much.
+
+Also, the goutput streams showed up in the same folder I created to save these files, and I have no idea what they are. Maybe they make sense to someone else.
+
+No grub because of Toby.
+No bluetooth because of Blue.
+No chihuahuas because of Jasper? I need to figure out his... oh wait... the pea that became a corn kernel! That is the answer! Thank You, Jesus, for my to-do list!
+
+Here is the output from about:buildconfig in Firefox:
+
+------------------------------------------------
+
+
+Build Configuration
+
+Please be aware that this page doesn't reflect all the options used to build Firefox.
+
+
+Source
+
+Built from https://hg.mozilla.org/releases/mozilla-esr115/rev/e1174a2473ad7e8fdde28d29e2e9e14ae1f15a72
+
+
+Build platform
+
+target
+x86_64-pc-linux-gnu
+
+
+Build tools
+
+Compiler 			Version 	Compiler flags
+/usr/bin/gcc -std=gnu99		12.2.0		-O2 -ffile-prefix-map=/build/reproducible-path/firefox-esr-115.14.0esr=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe
+/usr/bin/g++ 			12.2.0		-Wdate-time -D_FORTIFY_SOURCE=2 -fno-sized-deallocation -fno-aligned-new -O2 -ffile-prefix-map=/build/reproducible-path/firefox-esr-115.14.0esr=. -fstack-protector-strong -Wformat -Werror=format-security -fno-exceptions -fPIC -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread -pipe -gdwarf-4 -freorder-blocks -O2 -fomit-frame-pointer -funwind-tables
+/usr/bin/rustc 			1.63.0		--remap-path-prefix=/build/reproducible-path/firefox-esr-115.14.0esr=.
+
+
+Configure options
+
+--host=x86_64-linux-gnu --target=x86_64-linux-gnu MOZILLA_OFFICIAL=1 --enable-update-channel=esr MOZBUILD_STATE_PATH=/build/reproducible-path/firefox-esr-115.14.0esr/debian/.mozbuild CC=gcc CXX=g++ --enable-alsa --with-app-name=firefox-esr --with-system-nspr RUSTFLAGS=--remap-path-prefix=/build/reproducible-path/firefox-esr-115.14.0esr=. --enable-system-ffi --enable-default-toolkit=cairo-gtk3-wayland --with-mozilla-api-keyfile=/build/reproducible-path/firefox-esr-115.14.0esr/debian/mls.key --with-google-location-service-api-keyfile=/build/reproducible-path/firefox-esr-115.14.0esr/debian/google.key --with-google-safebrowsing-api-keyfile=/build/reproducible-path/firefox-esr-115.14.0esr/debian/google.key --with-unsigned-addon-scopes=app,system --with-system-libvpx --disable-updater MOZ_APP_REMOTINGNAME=Firefox-esr --with-system-libevent --disable-install-strip --with-system-zlib --enable-official-branding --prefix=/usr
