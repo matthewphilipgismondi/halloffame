@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Firefox ESR (run as spot)
+Comment=Run Firefox web browser as restricted user (spot)
+Exec=run-as-spot /opt/FirefoxESR-portable64/firefox64/firefox
+Icon=/usr/share/pixmaps/firefox_esr.png
+Type=Application
+Terminal=false
+Categories=X-Internet-browser
