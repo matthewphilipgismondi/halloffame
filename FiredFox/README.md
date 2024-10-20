@@ -1,3 +1,5 @@
 This is from the "adrv" disk image that was in the Puppy Linux files which contains mainly the Firefox ESR version that appears to be exploited all over the place. Turns out that the file is too large to upload thanks to the libxul file which is about 140MB. I see that file a lot and it reminds me of Xul Aman in World of Warcraft. I can't remember much about it, but I remember that was one of those "YOU HAVE TO BE A BEAR OFF TANK" raids that I hated because I couldn't be a tree.
 
 The name "FiredFox" was not included anywhere. I just called it that because I have to delete Firefox and download a more recent version in almost every Linux distro I have installed. It's not Mozilla's fault though.
+
+Also, there are two omni.ja files that were too large to upload as well. One in the root of the app folder, and then another one in the "browser" subfolder. I thought those were supposed to be readable text files, but they have binary encoding or something that makes them cause errors and lots of tofu, as they say. Those files are missing along with that libxul file and its sig file.
